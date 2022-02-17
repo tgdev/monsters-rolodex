@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { CardList } from "./components/CardList/CardList";
+import { CardList } from './components/CardList/CardList';
 
-import "./App.css";
+import './App.css';
 
 function App() {
   const [monsters, setMonsters] = useState([]);
 
   useEffect(() => {
     // fetch data
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((monsters) => setMonsters(monsters));
   }, []);
