@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+
+import { CardList } from "./components/CardList/CardList";
+
 import "./App.css";
 
 function App() {
@@ -14,9 +17,7 @@ function App() {
   return (
     <div className="App">
       <h1>Monsters Rolodex</h1>
-      {monsters.map((monster) => (
-        <p key={monster.id}>{monster.name}</p>
-      ))}
+      <CardList monsters={monsters} />
     </div>
   );
 }
