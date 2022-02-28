@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { CardList } from './components/CardList/CardList';
+import { SearchField } from './components/SearchField/SearchField';
 
 import './App.css';
 
@@ -24,11 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>Monsters Rolodex</h1>
-      <input
-        type="search"
-        placeholder="Search monsters"
-        onChange={handleChange}
-      />
+      <SearchField handleChange={handleChange} placeholder="Search monsters" />
       <CardList monsters={filteredMonsters} />
     </div>
   );
