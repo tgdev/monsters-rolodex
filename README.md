@@ -2,8 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It is the source code for the Monsters Rolodex App exercise from the [Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)
-](https://www.udemy.com/course/complete-react-developer-zero-to-mastery) course on Udemy by [Zero to Mastery](https://zerotomastery.io/)
+It is the source code for the Monsters Rolodex App exercise from the [Complete React Developer in 2022](https://www.udemy.com/course/complete-react-developer-zero-to-mastery) course on Udemy by [Zero to Mastery](https://zerotomastery.io/)
 
 ## Available Scripts
 
