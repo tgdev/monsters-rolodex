@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { CardList } from './components/CardList/CardList';
-import { SearchField } from './components/SearchField/SearchField';
+import { CardList } from './components/card-list/card-list.component';
+import { SearchField } from './components/search-field/search-field.component';
 
 import './App.css';
 

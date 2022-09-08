@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './SearchField.css';
+import './search-field.styles.css';
 
 export const SearchField = ({ handleChange, placeholder }) => (
   <input
