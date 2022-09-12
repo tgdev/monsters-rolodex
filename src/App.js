@@ -10,22 +10,26 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    // fetch data
+    // fetch data on app mount
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((monsters) => setMonsters(monsters));
   }, []);
 
-  const handleChange = (e) => setSearchQuery(e.target.value);
+  const onSearchChange = (e) =>
+    setSearchQuery(e.target.value.toLocaleLowerCase());
 
   const filteredMonsters = monsters.filter((m) =>
-    m.name.toLowerCase().includes(searchQuery.toLowerCase()),
+    m.name.toLowerCase().includes(searchQuery),
   );
 
   return (
     <div className="App">
       <h1>Monsters Rolodex</h1>
-      <SearchField handleChange={handleChange} placeholder="Search monsters" />
+      <SearchField
+        handleChange={onSearchChange}
+        placeholder="Search monsters"
+      />
       <CardList monsters={filteredMonsters} />
     </div>
   );
